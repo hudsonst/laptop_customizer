@@ -1,13 +1,7 @@
 import React, { Component } from 'react';
 import Customize from './Customize/Customize';
-//import Summary from './Summary/Summary';
-
-// Normalizes string as a slug - a string that is safe to use
-// in both URLs and html attributes
-//import slugify from 'slugify';
-
+import Summary from './Summary/Summary';
 import './App.css';
-
 
 
 class App extends Component {
@@ -51,7 +45,9 @@ class App extends Component {
          selected={this.state.selected}
          updateFeature={(feature, item) => this.updateFeature(feature, item)} 
         />
-
+        <Summary features={this.props.features}
+         selected={this.state.selected}
+         />
       </div>
     );
   }

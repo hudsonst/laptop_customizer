@@ -8,6 +8,9 @@ const USCurrencyFormat = new Intl.NumberFormat('en-US', {
   currency: 'USD'
 });
 
+
+
+
 class Features extends Component {
   render() {
 

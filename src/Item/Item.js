@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import slugify from 'slugify';
 import Features from '../Features/Features';
 
 class Item extends Component {
